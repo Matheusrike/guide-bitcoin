@@ -18,6 +18,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--White);
+}
+
+/*Header styles*/
+
 .header {
     display: flex;
     align-items: center;
@@ -37,13 +43,13 @@ html {
     height: 40px;
 }
 
-.link-list {
+.nav-links {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-.link-list a {
+.nav-links a {
     font-size: 1.6rem;
     font-weight: bolder;
     text-decoration: none;
@@ -54,7 +60,7 @@ html {
     transition: all 0.3s ease-out 0.1s;
 }
 
-.link-list a::after {
+.nav-links a::after {
     height: 2px;
     width: 100%;
     background: var(--Orange);
@@ -66,7 +72,18 @@ html {
     transition: transform 0.3s;
 }
 
-.link-list a:hover::after {
+.nav-links a:hover::after {
     transform: scaleX(1);
     background-color: var(--Orange);
+}
+
+/*Footer styles*/
+
+.footer {
+    height: 300px;
+    background-color: var(--Back);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
