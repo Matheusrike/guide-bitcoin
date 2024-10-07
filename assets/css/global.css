@@ -86,4 +86,38 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0px 150px;
+    gap: 50px;
+    color: var(--White)
+}
+
+.footer-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudos,
+.social-medias {
+    max-width: 25%;
+}
+
+.disclaimer {
+    max-width: 50%;
+    line-height: 1.6rem;
+}
+
+.conteudos h4,
+.social-medias h4,
+.disclaimer h4 {
+    margin-bottom: 10px;
 }
