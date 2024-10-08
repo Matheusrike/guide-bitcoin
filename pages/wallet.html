@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/assets/img/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/wallet-page.css">
+    <script src="../javascript/walletPlataformSelector.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
         <a href="/home"><img class="header-logo" src="../assets/img/Logo.svg" alt="Bitcoin Logo"></a>
         <nav>
             <ul class="nav-links">
-                <li><a href="/use">Guia Prático</a></li>
+                <li><a href="/starting">Guia Prático</a></li>
                 <li><a href="/wallet">Escolha Sua Carteira</a></li>
                 <li><a href="/trading">Negocie</a></li>
                 <li><a href="/content">Aprenda Mais</a></li>
@@ -27,7 +28,7 @@
     <main>
         <section class="banner">
             <h1>Escolha sua <span class="realce">Bitcoin</span> Wallet</h1>
-            <h2>Escolha uma carteira para guardar seus bitcoins e comece a realizar transações online</h2>
+            <p>Escolha uma carteira para guardar seus bitcoins e comece a realizar transações online</p>
             <div class="botoes">
                 <button class="botao"><img src="../assets/img/Windows-icon.svg" alt="Windows-icon" class="botao-icone"
                         height="25px"><a href="#windows-wallets" class="botao-link"></a>Windows</button>
@@ -41,6 +42,47 @@
                         height="25px"><a href="" class="botao-link"></a>IOS</button>
             </div>
         </section>
+
+        <!-- <section class="none-wallet">
+            <h2>Nenhuma carteira selecionada</h2>
+            <p>Por favor selecione a plataforma desejada acima. </p>
+            <img src="../assets/img/Wallet.svg" alt="Carteira vazia com uma lupa no lado esquerdo">
+        </section> -->
+
+        <section class="os-wallets" id="Windows">
+            <h2>Carteiras para Windows</h2>
+            <div class="card">
+                <div class="infos">
+                    <img src="../assets/img/Electrum-Logo.svg" alt="Electrum Wallet Logo" height="50px">
+                    <div class="detalhes">
+                        <div class="lista">
+                            <h3>Características</h3>
+                            <ul class="caracteristicas">
+                                <li>Leve, rápida e segura;</li>
+                                <li>Funciona com full nodes e servidores remotos;</li>
+                                <li>Suporte para hardware wallets (Trezor, Ledger, etc.);</li>
+                                <li>Interface simples e com suporte a plugins;</li>
+                                <li>Suporte para assinaturas múltiplas (multi-signature wallets).</li>
+                            </ul>
+                        </div>
+                        <div class="lista">
+                            <h3><img src="" alt="">Segurança</h3>
+                            <ul class="caracteristicas">
+                                <li>Criptografia das chaves privadas;</li>
+                                <li>autenticação de dois fatores (2FA);</li>
+                                <li>código aberto.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="referencias">
+                        <a href="https://electrum.org/"><button class="link">Saiba Mais</button></a>
+                        <a href="https://electrum.readthedocs.io/"><button class="link">Documentação</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
     </main>
 
     <footer class="footer">
@@ -50,7 +92,7 @@
             <div class="conteudos">
                 <h4>Outros Conteúdos Relevantes</h4>
                 <ul>
-                    <li><a href="/use">Como Usar</a></li>
+                    <li><a href="/starting">Como Usar</a></li>
                     <li><a href="/wallet">Carteiras Indicadas</a></li>
                     <li><a href="/trading">Negocie Bitcoin</a></li>
                     <li><a href="/content">Aprenda Mais</a></li>

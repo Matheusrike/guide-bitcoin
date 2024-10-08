@@ -37,6 +37,7 @@ body {
     position: sticky;
     top: 25px;
     box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .header-logo {
@@ -140,6 +141,7 @@ body {
 .disclaimer p {
     font-size: 1.4rem;
     line-height: 3rem;
+    text-align: justify;
 }
 
 .copyright {
