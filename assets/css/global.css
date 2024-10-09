@@ -11,6 +11,7 @@
     --Orange: #FF7E00;
     --White: #FAFAFA;
     --Gray: #B7B7B7;
+    --Green: #1D9200;
 }
 
 html {
@@ -79,7 +80,7 @@ body {
     background-color: var(--Orange);
 }
 
-/**Footer styles*/
+/*Footer styles*/
 
 .footer {
     height: 500px;
@@ -109,19 +110,19 @@ body {
     gap: 15px;
 }
 
-.conteudos,
+.content,
 .social-medias {
     max-width: 25%;
 }
 
-.conteudos a,
+.content a,
 .social-medias a {
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--Gray);
 }
 
-.conteudos a:hover,
+.content a:hover,
 .social-medias a:hover {
     font-size: 1.4rem;
     color: var(--Orange);
@@ -149,7 +150,7 @@ body {
     margin-top: 5px;
 }
 
-.conteudos h4,
+.content h4,
 .social-medias h4,
 .disclaimer h4 {
     margin-bottom: 10px;
