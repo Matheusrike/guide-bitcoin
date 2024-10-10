@@ -7,11 +7,12 @@
 }
 
 :root {
-    --Back: #13161F;
+    --Black: #13161F;
     --Orange: #FF7E00;
     --White: #FAFAFA;
-    --Gray: #B7B7B7;
-    --Green: #1D9200;
+    --Green: #2ECC71;
+    --LightGray: #EAEAEA;
+    --DarkGray: #4D4D4D;
 }
 
 html {
@@ -34,7 +35,7 @@ body {
     padding: 0px 5%;
     margin: 25px 5vw;
     border-radius: 10px;
-    background-color: var(--Back);
+    background-color: var(--Black);
     position: sticky;
     top: 25px;
     box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);

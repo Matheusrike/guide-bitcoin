@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitcoin - Wallets</title>
     <link rel="shortcut icon" href="/assets/img/Favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/global.css">
-    <link rel="stylesheet" href="../assets/css/wallet-page.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/wallet-page.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="/home"><img class="header-logo" src="../assets/img/Logo.svg" alt="Bitcoin Logo"></a>
+        <a href="/home"><img class="header-logo" src="/assets/img/Bitcoin-logo.svg" alt="Bitcoin Logo"></a>
         <nav>
             <ul class="nav-links">
                 <li><a href="/starting">Guia Prático</a></li>
@@ -29,29 +29,50 @@
             <h1>Escolha sua <span class="realce">Bitcoin</span> Wallet</h1>
             <p>Escolha uma carteira para guardar seus bitcoins e comece a realizar transações online</p>
             <div class="button-container">
-                <button class="banner-button"><img src="../assets/img/Windows-icon.svg" alt="Windows-icon" class="botao-icone"
-                        height="25px"><a href="#windows-wallets" class="botao-link"></a>Windows</button>
-                <button class="banner-button"><img src="../assets/img/Hardware-icon.svg" alt="Hardware-icon" class="botao-icone"
-                        height="25px"><a href="#hardware-wallets" class="botao-link"></a>Hardware</button>
-                <button class="banner-button"><img src="../assets/img/Apple-icon.svg" alt="Apple-icon" class="botao-icone"
-                        height="25px"><a href="" class="botao-link"></a>Mac OS</button>
-                <button class="banner-button"><img src="../assets/img/Android-icon.svg" alt="Android-icon" class="botao-icone"
-                        height="25px"><a href="" class="botao-link"></a>Android</button>
-                <button class="banner-button"><img src="../assets/img/Apple-icon.svg" alt="Apple-icon" class="botao-icone"
-                        height="25px"><a href="" class="botao-link"></a>IOS</button>
+                <a href="#windows-wallets" class="link-button">
+                    <button class="banner-button">
+                        <img src="/assets/img/Windows-icon.svg" alt="Windows-icon" class="botao-icone" height="25px">Windows
+                    </button>
+                </a>
+                <a href="#mac-wallets" class="link-button">
+                    <button class="banner-button">
+                        <img src="/assets/img/Apple-icon.svg" alt="Apple-icon" class="botao-icone" height="25px">Mac OS
+                    </button>
+                </a>
+                <a href="#linux-wallets" class="link-button">
+                    <button class="banner-button">
+                        <img src="/assets/img/Linux-icon.svg" alt="Linux-icon" class="botao-icone" height="25px">Linux
+                    </button>
+                </a>
+                <a href="#hardware-wallets" class="link-button">
+                    <button class="banner-button">
+                        <img src="/assets/img/Hardware-icon.svg" alt="Hardware-icon" class="botao-icone" height="25px">Hardware
+                    </button>
+                </a>
+                <a href="#android-wallets" class="link-button">
+                    <button class="banner-button">
+                        <img src="/assets/img/Android-icon.svg" alt="Android-icon" class="botao-icone" height="25px">Android
+                    </button>
+                </a>
+                <a href="#ios-wallets" class="link-button">
+                    <button class="banner-button">
+                        <img src="/assets/img/Apple-icon.svg" alt="Apple-icon" class="botao-icone" height="25px">IOS
+                    </button>
+                </a>                
             </div>
+            <hr>
         </section>
 
         <section class="none-wallet">
             <h3>Nenhuma plataforma selecionada</h3>
             <p>Por favor selecione uma das plataformas acima para prosseguir. </p>
-            <img src="../assets/img/Wallet.svg" alt="Carteira vazia com uma lupa no lado esquerdo">
+            <img src="/assets/img/Search-wallet-icon.svg" alt="Carteira vazia com uma lupa no lado esquerdo">
         </section>
 
-        <section class="os-wallets" id="Windows">
+        <section class="os-wallets" id="windows-wallets">
             <div class="wallets-container">
                 <div class="wallet-card"> <!-- row -->
-                    <img src="#wallet icon" alt="">
+                    <img src="/assets/img/Electrum-icon.svg" alt="Electrum Wallet Logo" height="150px">
                     <div class="infos"> <!-- column -->
                         <div class="characteristics">
                             <h4>Carteira XYZ</h4>
@@ -71,10 +92,9 @@
                                 </button>
                             </a>
 
-                            <a href="#site-da-carteira">
-                                <button class="">Visite o Site
-                                    <img id="closed-door" src="/assets/img/closed-door-icon.svg" height="25px">
-                                    <img id="opened-door" src="/assets/img/open-door-icon.svg" height="25px">
+                            <a href="#documentação">
+                                <button class="">Documentação
+                                    <img src="/assets/img/folder-info-icon.svg" height="25px">
                                 </button>
                             </a>
 
