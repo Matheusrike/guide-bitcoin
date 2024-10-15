@@ -7,11 +7,13 @@
 }
 
 :root {
-    --Back: #13161F;
+    --Black: #13161F;
     --Orange: #FF7E00;
     --White: #FAFAFA;
-    --Gray: #B7B7B7;
-    --Green: #1D9200;
+    --Green: #1d9200;
+    --Gray: #DDD;
+    --LightGray: #EAEAEA;
+    --DarkGray: #4D4D4D;
 }
 
 html {
@@ -34,7 +36,7 @@ body {
     padding: 0px 5%;
     margin: 25px 5vw;
     border-radius: 10px;
-    background-color: var(--Back);
+    background-color: var(--Black);
     position: sticky;
     top: 25px;
     box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);
@@ -84,7 +86,7 @@ body {
 
 .footer {
     height: 500px;
-    background-color: var(--Back);
+    background-color: var(--Black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +121,7 @@ body {
 .social-medias a {
     font-size: 1.4rem;
     text-decoration: none;
-    color: var(--Gray);
+    color: var(--LightGray);
 }
 
 .content a:hover,
@@ -136,27 +138,133 @@ body {
     flex-direction: column;
     justify-content: space-between;
     max-width: 50%;
-    line-height: 1.6rem;
 }
 
 .disclaimer p {
     font-size: 1.4rem;
     line-height: 3rem;
     text-align: justify;
+    color: var(--LightGray);
 }
 
-.copyright {
-    color: var(--Gray);
-    margin-top: 5px;
+.disclaimer .copyright {
+    color: var(--Orange);
+    margin-top: 20px;
+    font-weight: 500;
 }
 
 .content h4,
 .social-medias h4,
 .disclaimer h4 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1.8rem;
 }
 
 .footer hr {
     width: 50%;
+}
+
+/*Padrões de código*/
+
+a {
+    text-decoration: none;
+}
+
+/*Realce de texto*/
+
+.realce {
+    color: var(--Orange);
+}
+
+/*Botão CTA*/
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px var(--Orange) solid;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: var(--White);
+    color: var(--White);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button .text {
+    color: var(--Orange);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.cta-button:hover {
+    background-color: var(--Orange);
+    border: 2px var(--Orange) solid;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover .text {
+    color: var(--White);
+}
+
+/*Botão Secundário*/
+.secondary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px var(--DarkGray) solid;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: var(--White);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-button .text {
+    color: var(--DarkGray);
+    font-size: 1.8rem;
+    font-weight: normal;
+    transition: 300ms;
+}
+
+.secondary-button:hover {
+    background-color: var(--DarkGray);
+    border: 2px var(--DarkGray) solid;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-button:hover .text {
+    color: var(--White);
+}
+
+.secondary-button:focus {
+    outline: 1px solid var(--Orange);
+}
+
+/*Botão CTA preenchido*/
+.cta-button-filled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px var(--Orange) solid;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: var(--Orange);
+    color: var(--White);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-filled .text {
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.cta-button-filled:hover {
+    box-shadow: 0 6px 8px rgba(255, 126, 0, 0.2);
 }

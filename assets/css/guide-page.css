@@ -1,0 +1,201 @@
+@import url(global.css);
+
+
+/*Main*/
+.banner1 {
+    background-color: black;
+    width: auto;
+    height: 700px;
+    justify-content: center;
+
+}
+
+.banner1 h1 {
+    font-size: 8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.banner1 p {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.banner1 div {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.banner1 button {
+    background-color: orange;
+    border-radius: 8px;
+    width: 300px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.banner1 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+/*Para Indivíduos*/
+
+.banner2 {
+
+    width: auto;
+    height: 700px;
+    justify-content: center;
+}
+
+.banner2 h3 {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 15px;
+
+}
+
+.banner3 {
+    background-color: black;
+    width: auto;
+    height: 700px;
+    justify-content: center;
+}
+
+.banner3 nav ul li p {
+    font-size: 3rem;
+    justify-content: left;
+    padding: 8px;
+    color: white;
+}
+
+.banner3 button {
+    background-color: orange;
+    border-radius: 8px;
+    width: 300px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.banner3 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.banner4 {
+
+    width: auto;
+    height: 700px;
+    justify-content: center;
+}
+
+.banner4 h3 {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 15px;
+
+}
+
+.banner4 button {
+    background-color: orange;
+    border-radius: 8px;
+    width: 350px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.banner4 button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.banner5 {
+    background-color: black;
+    width: auto;
+    height: 700px;
+    justify-content: center;
+}
+
+.banner5 nav ul li p {
+    font-size: 3rem;
+    justify-content: left;
+    padding: 8px;
+    color: white;
+}
+
+/*Para Empresas*/
+.banner6 {
+
+    width: auto;
+    height: 700px;
+    justify-content: center;
+}
+
+.banner6 h3 {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 15px;
+
+}
+
+.banner7 {
+    background-color: black;
+    width: auto;
+    height: 700px;
+    justify-content: center;
+}
+
+.banner7 nav ul li p {
+    font-size: 3rem;
+    justify-content: left;
+    padding: 8px;
+    color: white;
+}
+
+
+
+
+/*Zig-Zag*/
+
+nav ul,
+nav {
+    display: flex;
+    padding-top: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+nav ul li h2 {
+    font-size: 4rem;
+    justify-content: left;
+    color: orange;
+}
+
+nav ul li p {
+    font-size: 3rem;
+    justify-content: left;
+    padding: 8px;
+}
+
+nav ul li img {
+    height: 100px;
+    width: 500px;
+    padding-top: 150px;
+}

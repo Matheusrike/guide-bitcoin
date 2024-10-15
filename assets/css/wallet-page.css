@@ -1,17 +1,17 @@
 @import url(./global.css);
 
-.realce {
-    color: var(--Orange);
-}
-
 section {
     height: 500px;
     width: 100vw;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Banner Style*/
 .banner {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@ section {
 }
 
 .button-container {
-    max-width: 65vw;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -38,14 +38,18 @@ section {
     gap: 25px;
 }
 
+.link-button {
+    text-decoration: none;
+}
+
 .banner-button {
-    border: 2px solid;
-    min-width: 300px;
+    border: 2px solid var(--Black);
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    padding: 15px 25px;
+    padding: 10px 0px;
     border-radius: 5px;
     background-color: var(--White);
     cursor: pointer;
@@ -53,27 +57,33 @@ section {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--Black);
-    transition: ease-in-out 0.2s;
+    transition: ease-out 0.1s;
 }
 
 .banner-button:hover {
     background-color: var(--Orange);
+    color: var(--White);
+}
+
+.banner-button:hover img, .banner-button:focus img{
+    filter:brightness(0) invert(1);
+    transition: ease-in 0.1s;
 }
 
 .banner-button:focus,
 .banner-button:active {
     background-color: var(--Orange);
-
+    color: var(--White);
 }
 
 /*Seção com nenhuma carteira selecionada*/
 
 .none-wallet {
     width: 100vw;
-    display: none; /*Mudar para flex para ver*/
+    display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 25px;
 }
 
@@ -92,8 +102,154 @@ section {
     margin-top: 25px;
 }
 
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 25px;
+}
+
+.divider p {
+    font-size: 2rem;
+    margin: 0px 100px;
+    color: var(--Orange);
+}
+
+.divider hr {
+    height: 0px ;
+    width: 40%;
+    max-width: 700px;
+    border-color: var(--Orange);
+}
+
 /*Seções das carteiras*/
 
 .os-wallets {
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;    
 }
+
+.wallets-container {
+    max-width: 100%;
+    padding: 0px 150px;
+}
+
+.wallet-card {
+    max-width: 100%;
+    height: 300px;
+    background-color: var(--LightGray);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 25px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-top: 50px;
+}
+
+.geral-infos {
+    width: 100%;
+    padding: 0px 25px;
+    display: flex;
+    gap: 30px;
+}
+
+.geral-infos h3 {
+    font-size: 3rem;
+    color: var(--Orange);
+}
+
+.geral-infos h4 {
+    font-size: 1.8rem;
+    color: var(--Black);
+    margin-bottom: 5px;
+}
+
+.geral-infos p, .geral-infos li {
+    font-size: 1.6rem;
+}
+
+.infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding-left: 25px;
+}
+
+.infos ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.adc-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wallet-link {
+    border: 1px solid var(--Black);
+    background-color: var(--White);
+    border-radius: 5px;
+    min-width: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.wallet-link p{
+    font-size: 1.6rem;
+}
+
+#opened-door {
+    display: none;
+}
+
+.white-icon {
+    filter: brightness(0) invert(1);
+}
+
+.wallet-link:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: ease-in 0.1s;
+}
+
+.wallet-link:hover #folder-info {
+    filter: brightness(0) invert(1);
+}
+
+.price-tag{
+    background-color: #cbf5dd;
+    border: 1px solid var(--Green);
+    border-radius: 5px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Green);
+}
+
