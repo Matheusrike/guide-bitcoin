@@ -48,7 +48,7 @@ a {
 }
 
 .banner-button {
-    border: 2px solid var(--Black);
+    border: 2px solid var(--DarkGray);
     width: 200px;
     display: flex;
     align-items: center;
@@ -61,22 +61,24 @@ a {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--Black);
-    transition: ease-out 0.1s;
+    color: var(--DarkGray);
+    transition: 300ms;
 }
 
 .banner-button:hover {
     background-color: var(--Orange);
     color: var(--White);
+    border: 2px solid var(--Orange);
 }
 
 .banner-button:hover img, .banner-button:focus img{
     filter:brightness(0) invert(1);
-    transition: ease-in 0.1s;
+    transition: 300ms;
 }
 
 .banner-button:focus,
 .banner-button:active {
+    border: 2px solid var(--Orange);
     background-color: var(--Orange);
     color: var(--White);
 }
@@ -107,7 +109,7 @@ a {
     margin-top: 25px;
 }
 
-
+/*Seções das carteiras*/
 
 .divider {
     display: flex;
@@ -116,22 +118,22 @@ a {
     width: 100%;
     height: fit-content;
     margin-bottom: 25px;
+    opacity: 0.7;
 }
 
 .divider p {
     font-size: 2rem;
     margin: 0px 100px;
-    color: var(--Orange);
+    color: var(--DarkGray);
+    font-weight: bold;
 }
 
 .divider hr {
     height: 0px ;
-    width: 40%;
+    width: 33%;
     max-width: 700px;
-    border-color: var(--Orange);
+    border-color: var(--DarkGray);
 }
-
-/*Seções das carteiras*/
 
 .os-wallets {
     width: 100%;
@@ -158,6 +160,10 @@ a {
     overflow: hidden;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     margin-top: 50px;
+}
+
+.wallet-logo {
+    border-radius: 100%;
 }
 
 .geral-infos {
@@ -204,47 +210,69 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
 }
 
-.wallet-link {
+.documentation-button, .wallet-site-button {
     border: 1px solid var(--Black);
     background-color: var(--White);
     border-radius: 5px;
     min-width: 172px;
+    min-height: 47px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.6rem;
+    position: relative;
+    transition:300ms;
 }
 
-.wallet-link p{
+.documentation-button p, .wallet-site-button p {
     font-size: 1.6rem;
+    transition: 300ms;
 }
 
-#opened-door {
-    display: none;
+.documentation-button .icon, .wallet-site-button .icon {
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    height: 25px;
+    transition: 300ms;
+    transform: translateX(10px);
 }
 
-.white-icon {
-    filter: brightness(0) invert(1);
-}
-
-.wallet-link:hover {
+.documentation-button:hover, .wallet-site-button:hover {
+    border: 1px solid var(--Orange);
     background-color: var(--Orange);
+}
+
+.wallet-site-button:hover p {
+    transform: translateX(-12px);
     color: var(--White);
-    transition: ease-in 0.1s;
+    font-weight: bold;
 }
 
-.wallet-link:hover #folder-info {
-    filter: brightness(0) invert(1);
+.wallet-site-button:hover .icon {
+    opacity: 1;
+    transform: translateX(-10px);
 }
 
-.price-tag{
+.documentation-button:hover p {
+    transform: translateX(-15px);
+    color: var(--White);
+    font-weight: bold;
+}
+
+.documentation-button:hover .icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.free{
     background-color: #cbf5dd;
     border: 1px solid var(--Green);
     border-radius: 5px;
@@ -258,3 +286,53 @@ a {
     color: var(--Green);
 }
 
+.paid {
+    background-color: #ffebc4;
+    border: 1px solid var(--Orange);
+    border-radius: 5px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Orange);
+}
+
+.paid img {
+    fill: var(--Orange);
+}
+
+.free p, .paid p {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#none-wallet {
+    display: flex;
+}
+
+#windows-wallets {
+    display: none;
+}
+
+#mac-wallets {
+    display: none;
+}
+
+#linux-wallets {
+    display: none;
+}
+
+#hardware-wallets {
+    display: none;
+}
+
+#android-wallets {
+    display: none;
+}
+
+#ios-wallets {
+    display: none;
+}

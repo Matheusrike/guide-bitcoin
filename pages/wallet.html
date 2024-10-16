@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin - Wallets</title>
+    <title>Bitcoin - Carteiras</title>
     <link rel="shortcut icon" href="/assets/img/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/wallet-page.css">
@@ -15,11 +15,11 @@
         <a href="/home"><img class="header-logo" src="/assets/img/Bitcoin-logo.svg" alt="Bitcoin Logo"></a>
         <nav>
             <ul class="nav-links">
-                <li><a href="/starting">Guia Prático</a></li>
-                <li><a href="/wallet">Escolha Sua Carteira</a></li>
-                <li><a href="/trading">Negocie</a></li>
-                <li><a href="/content">Aprenda Mais</a></li>
-                <li><a href="/about">Sobre o Bitcoin</a></li>
+                <li><a href="guide.html">Guia Prático</a></li>
+                <li><a href="wallet.html">Escolha Sua Carteira</a></li>
+                <li><a href="trading.html">Negocie</a></li>
+                <li><a href="content.html">Aprenda Mais</a></li>
+                <li><a href="about.html">Sobre o Bitcoin</a></li>
             </ul>
         </nav>
     </header>
@@ -28,6 +28,7 @@
         <section class="banner">
             <h1>Escolha sua <span class="realce">Bitcoin</span> Wallet</h1>
             <p>Escolha uma carteira para guardar seus bitcoins e comece a realizar transações online</p>
+
             <div class="button-container">
                 <a href="#windows-wallets" class="link-button">
                     <button class="banner-button">
@@ -65,31 +66,84 @@
             </div>
         </section>
 
-        <section class="none-wallet">
+        <section class="none-wallet" id="none-wallet">
             <h3>Nenhuma plataforma selecionada</h3>
             <p>Por favor selecione uma das plataformas acima para prosseguir. </p>
             <img src="/assets/img/Search-wallet-icon.svg" alt="Carteira vazia com uma lupa no lado esquerdo">
         </section>
 
-        <div class="divider">
-            <hr>
-            <p>Carteiras disponíveis</p>
-            <hr>
-        </div>
-
         <section class="os-wallets" id="windows-wallets">
 
+            <div class="divider">
+                <hr>
+                <p>Carteiras disponíveis</p>
+                <hr>
+            </div>
+
             <div class="wallets-container">
+
                 <div class="wallet-card">
-                    <img src="/assets/img/Electrum-logo.svg" alt="Electrum Wallet Logo" height="250px">
+                    <img class="wallet-logo" src="/assets/img/bitcoin-core-logo.svg" alt="Bitcoin Core Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Bitcoin Core</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Bitcoin Core é a carteira oficial do Bitcoin e também um nó completo, garantindo
+                                    segurança máxima e privacidade. É recomendada para usuários avançados que desejam
+                                    validar diretamente suas transações.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Operação de um nó completo, oferecendo segurança máxima</li>
+                                    <li>Validação direta de transações e blocos</li>
+                                    <li>Controle completo sobre taxas de transação</li>
+                                    <li>Interface simples e funcional</li>
+                                    <li>Open-source e altamente auditada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://bitcoin.org/pt_BR/download" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://bitcoin.org/en/full-node" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Electrum-logo.svg" alt="Electrum Wallet Logo"
+                        height="250px">
                     <div class="geral-infos">
                         <div class="infos">
                             <h3>Electrum</h3>
                             <div class="info-container">
                                 <h4>Descrição</h4>
-                                <p>A Electrum é uma das carteiras de Bitcoin mais antigas e populares, conhecida por ser
-                                    leve e rápida. Ela prioriza a simplicidade, oferecendo uma interface amigável, ao
-                                    mesmo tempo em que mantém forte segurança.</p>
+                                <p>
+                                    Electrum é uma carteira leve e altamente segura, conhecida por sua velocidade e
+                                    simplicidade. Ela é ideal para usuários que preferem não baixar o blockchain
+                                    completo, mantendo suas transações rápidas e eficientes.
+                                </p>
                             </div>
                             <div class="info-container">
                                 <h4>Características</h4>
@@ -105,201 +159,152 @@
                         <hr>
                         <div class="adc-infos">
                             <a href="https://electrum.org" target="_blank">
-                                <button class="wallet-link" id="site-button">Visite o Site
-                                    <img id="closed-door" src="/assets/img/Closed-door-icon.svg" height="25px">
-                                    <img id="opened-door" src="/assets/img/Opened-door-icon.svg" height="25px">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
                                 </button>
                             </a>
 
                             <a href="https://electrum.readthedocs.io/en/latest/" target="_blank">
-                                <button class="wallet-link">Documentação
-                                    <img id="folder-info" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
                                 </button>
                             </a>
 
-                            <div class="price-tag">
+                            <div class="free">
                                 <p>Gratuita</p>
-                                <img src="/assets/img/Dollar-icon.svg" height="25px">
+                                <img src="/assets/img/free-icon.svg" height="25px">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="wallet-card">
-                    <img src="/assets/img/Electrum-icon.svg" alt="Electrum Wallet Logo" height="250px">
+                    <img class="wallet-logo" src="/assets/img/exodus-logo.png" alt="Exodus Wallet Logo" height="250px">
                     <div class="geral-infos">
                         <div class="infos">
-                            <h3>Carteira XYZ</h3>
+                            <h3>Exodus</h3>
                             <div class="info-container">
                                 <h4>Descrição</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sequi nisi nobis
-                                    a
-                                    ipsum voluptate itaque sed, accusamus natus neque deleniti modi cupiditate nam sint,
-                                    consectetur sapiente? Sit, expedita sunt.</p>
+                                <p>
+                                    Exodus é uma carteira multi-cripto com uma interface moderna e fácil de usar, ideal
+                                    para iniciantes. Suporta uma grande variedade de criptomoedas e oferece uma
+                                    experiência visualmente atraente.
+                                </p>
                             </div>
                             <div class="info-container">
                                 <h4>Características</h4>
                                 <ul>
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                    <li>item4</li>
+                                    <li>Suporta múltiplas criptomoedas além do Bitcoin</li>
+                                    <li>Interface intuitiva e amigável, ideal para iniciantes</li>
+                                    <li>Integração com carteiras de hardware, como Trezor</li>
+                                    <li>Trocas cripto integradas diretamente na carteira</li>
+                                    <li>Sem custódia, com controle completo sobre as chaves privadas</li>
                                 </ul>
                             </div>
                         </div>
                         <hr>
                         <div class="adc-infos">
-                            <a href="#site-da-carteira"> <!-- todo Adc Site da carteira -->
-                                <button class="wallet-link" id="site-button">Visite o Site
-                                    <img id="closed-door" src="/assets/img/Closed-door-icon.svg" height="25px">
-                                    <img id="opened-door" src="/assets/img/Opened-door-icon.svg" height="25px">
+                            <a href="https://www.exodus.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
                                 </button>
                             </a>
 
-                            <a href="#documentação">
-                                <button class="wallet-link">Documentação
-                                    <img id="folder-info" src="/assets/img/Folder-info-icon.svg" height="25px">
-                                </button>
-                            </a>
-
-                            <div class="price-tag">
+                            <div class="free">
                                 <p>Gratuita</p>
-                                <img src="/assets/img/Dollar-icon.svg" height="25px">
+                                <img src="/assets/img/free-icon.svg" height="25px">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="wallet-card">
-                    <img src="/assets/img/Electrum-icon.svg" alt="Electrum Wallet Logo" height="250px">
+                    <img class="wallet-logo" src="/assets/img/Wasabi-logo.png" alt="Wasabi Wallet Logo" height="250px">
                     <div class="geral-infos">
                         <div class="infos">
-                            <h3>Carteira XYZ</h3>
+                            <h3>Wasabi Wallet</h3>
                             <div class="info-container">
                                 <h4>Descrição</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sequi nisi nobis
-                                    a
-                                    ipsum voluptate itaque sed, accusamus natus neque deleniti modi cupiditate nam sint,
-                                    consectetur sapiente? Sit, expedita sunt.</p>
+                                <p>
+                                    Wasabi Wallet é uma carteira focada na privacidade, utilizando técnicas avançadas
+                                    como CoinJoin para aumentar o anonimato nas transações. Ideal para quem busca maior
+                                    proteção de dados.
+                                </p>
                             </div>
                             <div class="info-container">
                                 <h4>Características</h4>
                                 <ul>
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                    <li>item4</li>
+                                    <li>Privacidade avançada com CoinJoin</li>
+                                    <li>Suporte para hardware wallets</li>
+                                    <li>Foco em anonimato e privacidade</li>
+                                    <li>Leve, sem a necessidade de baixar o blockchain completo</li>
+                                    <li>Código open-source e auditada</li>
                                 </ul>
                             </div>
                         </div>
                         <hr>
                         <div class="adc-infos">
-                            <a href="#site-da-carteira"> <!-- todo Adc Site da carteira -->
-                                <button class="wallet-link" id="site-button">Visite o Site
-                                    <img id="closed-door" src="/assets/img/Closed-door-icon.svg" height="25px">
-                                    <img id="opened-door" src="/assets/img/Opened-door-icon.svg" height="25px">
+                            <a href="https://wasabiwallet.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
                                 </button>
                             </a>
 
-                            <a href="#documentação">
-                                <button class="wallet-link">Documentação
-                                    <img id="folder-info" src="/assets/img/Folder-info-icon.svg" height="25px">
+                            <a href="https://docs.wasabiwallet.io/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
                                 </button>
                             </a>
 
-                            <div class="price-tag">
+                            <div class="free">
                                 <p>Gratuita</p>
-                                <img src="/assets/img/Dollar-icon.svg" height="25px">
+                                <img src="/assets/img/free-icon.svg" height="25px">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="wallet-card">
-                    <img src="/assets/img/Electrum-icon.svg" alt="Electrum Wallet Logo" height="250px">
+                    <img class="wallet-logo" src="/assets/img/atomic-logo.png" alt="Atomic Wallet Logo" height="250px">
                     <div class="geral-infos">
                         <div class="infos">
-                            <h3>Carteira XYZ</h3>
+                            <h3>Atomic Wallet</h3>
                             <div class="info-container">
                                 <h4>Descrição</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sequi nisi nobis
-                                    a
-                                    ipsum voluptate itaque sed, accusamus natus neque deleniti modi cupiditate nam sint,
-                                    consectetur sapiente? Sit, expedita sunt.</p>
+                                <p>
+                                    Atomic Wallet é uma carteira multi-cripto que oferece suporte a mais de 300 moedas e
+                                    tokens. Além de armazenar criptomoedas, ela permite trocas internas e compras
+                                    diretas com cartão de crédito.
+                                </p>
                             </div>
                             <div class="info-container">
                                 <h4>Características</h4>
                                 <ul>
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                    <li>item4</li>
+                                    <li>Suporta mais de 300 criptomoedas</li>
+                                    <li>Troca de criptos integrada via Atomic Swaps</li>
+                                    <li>Carteira descentralizada, com controle das chaves privadas</li>
+                                    <li>Compra de cripto com cartão de crédito integrada</li>
+                                    <li>Interface amigável e fácil de usar</li>
                                 </ul>
                             </div>
                         </div>
                         <hr>
                         <div class="adc-infos">
-                            <a href="#site-da-carteira"> <!-- todo Adc Site da carteira -->
-                                <button class="wallet-link" id="site-button">Visite o Site
-                                    <img id="closed-door" src="/assets/img/Closed-door-icon.svg" height="25px">
-                                    <img id="opened-door" src="/assets/img/Opened-door-icon.svg" height="25px">
+                            <a href="https://atomicwallet.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
                                 </button>
                             </a>
 
-                            <a href="#documentação">
-                                <button class="wallet-link">Documentação
-                                    <img id="folder-info" src="/assets/img/Folder-info-icon.svg" height="25px">
-                                </button>
-                            </a>
-
-                            <div class="price-tag">
+                            <div class="free">
                                 <p>Gratuita</p>
-                                <img src="/assets/img/Dollar-icon.svg" height="25px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wallet-card">
-                    <img src="/assets/img/Electrum-icon.svg" alt="Electrum Wallet Logo" height="250px">
-                    <div class="geral-infos">
-                        <div class="infos">
-                            <h3>Carteira XYZ</h3>
-                            <div class="info-container">
-                                <h4>Descrição</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sequi nisi nobis
-                                    a
-                                    ipsum voluptate itaque sed, accusamus natus neque deleniti modi cupiditate nam sint,
-                                    consectetur sapiente? Sit, expedita sunt.</p>
-                            </div>
-                            <div class="info-container">
-                                <h4>Características</h4>
-                                <ul>
-                                    <li>item1</li>
-                                    <li>item2</li>
-                                    <li>item3</li>
-                                    <li>item4</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="adc-infos">
-                            <a href="#site-da-carteira"> <!-- todo Adc Site da carteira -->
-                                <button class="wallet-link" id="site-button">Visite o Site
-                                    <img id="closed-door" src="/assets/img/Closed-door-icon.svg" height="25px">
-                                    <img id="opened-door" src="/assets/img/Opened-door-icon.svg" height="25px">
-                                </button>
-                            </a>
-
-                            <a href="#documentação">
-                                <button class="wallet-link">Documentação
-                                    <img id="folder-info" src="/assets/img/Folder-info-icon.svg" height="25px">
-                                </button>
-                            </a>
-
-                            <div class="price-tag">
-                                <p>Gratuita</p>
-                                <img src="/assets/img/Dollar-icon.svg" height="25px">
+                                <img src="/assets/img/free-icon.svg" height="25px">
                             </div>
                         </div>
                     </div>
@@ -307,6 +312,1011 @@
 
             </div>
         </section>
+
+        <section class="os-wallets" id="mac-wallets">
+
+            <div class="divider">
+                <hr>
+                <p>Carteiras disponíveis</p>
+                <hr>
+            </div>
+
+            <div class="wallets-container">
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/bitcoin-core-logo.svg" alt="Bitcoin Core Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Bitcoin Core</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Bitcoin Core é a carteira oficial do Bitcoin e também um nó completo, garantindo
+                                    segurança máxima e privacidade. É recomendada para usuários avançados que desejam
+                                    validar diretamente suas transações.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Operação de um nó completo, oferecendo segurança máxima</li>
+                                    <li>Validação direta de transações e blocos</li>
+                                    <li>Controle completo sobre taxas de transação</li>
+                                    <li>Interface simples e funcional</li>
+                                    <li>Open-source e altamente auditada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://bitcoin.org/pt_BR/download" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://bitcoin.org/en/full-node" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Electrum-logo.svg" alt="Electrum Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Electrum</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Electrum é uma carteira leve e altamente segura, conhecida por sua velocidade e
+                                    simplicidade. Ela é ideal para usuários que preferem não baixar o blockchain
+                                    completo, mantendo suas transações rápidas e eficientes.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Leve e rápida, não requer download completo da blockchain.</li>
+                                    <li>Suporte a multisig (transações assinadas por várias partes).</li>
+                                    <li>Integração com carteiras de hardware.</li>
+                                    <li>Open-source, permitindo auditoria pública do código.</li>
+                                    <li>Suporte a Lightning Network para transações rápidas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://electrum.org" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://electrum.readthedocs.io/en/latest/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/exodus-logo.png" alt="Exodus Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Exodus</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Exodus é uma carteira multi-cripto com uma interface moderna e fácil de usar, ideal
+                                    para iniciantes. Suporta uma grande variedade de criptomoedas e oferece uma
+                                    experiência visualmente atraente.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporta múltiplas criptomoedas além do Bitcoin</li>
+                                    <li>Interface intuitiva e amigável, ideal para iniciantes</li>
+                                    <li>Integração com carteiras de hardware, como Trezor</li>
+                                    <li>Trocas cripto integradas diretamente na carteira</li>
+                                    <li>Sem custódia, com controle completo sobre as chaves privadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://www.exodus.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Wasabi-logo.png" alt="Wasabi Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Wasabi Wallet</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Wasabi Wallet é uma carteira focada na privacidade, utilizando técnicas avançadas
+                                    como CoinJoin para aumentar o anonimato nas transações. Ideal para quem busca maior
+                                    proteção de dados.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Privacidade avançada com CoinJoin</li>
+                                    <li>Suporte para hardware wallets</li>
+                                    <li>Foco em anonimato e privacidade</li>
+                                    <li>Leve, sem a necessidade de baixar o blockchain completo</li>
+                                    <li>Código open-source e auditada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://wasabiwallet.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://docs.wasabiwallet.io/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/atomic-logo.png" alt="Atomic Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Atomic Wallet</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Atomic Wallet é uma carteira multi-cripto que oferece suporte a mais de 300 moedas e
+                                    tokens. Além de armazenar criptomoedas, ela permite trocas internas e compras
+                                    diretas com cartão de crédito.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporta mais de 300 criptomoedas</li>
+                                    <li>Troca de criptos integrada via Atomic Swaps</li>
+                                    <li>Carteira descentralizada, com controle das chaves privadas</li>
+                                    <li>Compra de cripto com cartão de crédito integrada</li>
+                                    <li>Interface amigável e fácil de usar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://atomicwallet.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="os-wallets" id="linux-wallets">
+
+            <div class="divider">
+                <hr>
+                <p>Carteiras disponíveis</p>
+                <hr>
+            </div>
+
+            <div class="wallets-container">
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/bitcoin-core-logo.svg" alt="Bitcoin Core Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Bitcoin Core</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Bitcoin Core é a carteira oficial do Bitcoin e também um nó completo, garantindo
+                                    segurança máxima e privacidade. É recomendada para usuários avançados que desejam
+                                    validar diretamente suas transações.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Operação de um nó completo, oferecendo segurança máxima</li>
+                                    <li>Validação direta de transações e blocos</li>
+                                    <li>Controle completo sobre taxas de transação</li>
+                                    <li>Interface simples e funcional</li>
+                                    <li>Open-source e altamente auditada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://bitcoin.org/pt_BR/download" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://bitcoin.org/en/full-node" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Electrum-logo.svg" alt="Electrum Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Electrum</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Electrum é uma carteira leve e altamente segura, conhecida por sua velocidade e
+                                    simplicidade. Ela é ideal para usuários que preferem não baixar o blockchain
+                                    completo, mantendo suas transações rápidas e eficientes.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Leve e rápida, não requer download completo da blockchain.</li>
+                                    <li>Suporte a multisig (transações assinadas por várias partes).</li>
+                                    <li>Integração com carteiras de hardware.</li>
+                                    <li>Open-source, permitindo auditoria pública do código.</li>
+                                    <li>Suporte a Lightning Network para transações rápidas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://electrum.org" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://electrum.readthedocs.io/en/latest/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/exodus-logo.png" alt="Exodus Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Exodus</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Exodus é uma carteira multi-cripto com uma interface moderna e fácil de usar, ideal
+                                    para iniciantes. Suporta uma grande variedade de criptomoedas e oferece uma
+                                    experiência visualmente atraente.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporta múltiplas criptomoedas além do Bitcoin</li>
+                                    <li>Interface intuitiva e amigável, ideal para iniciantes</li>
+                                    <li>Integração com carteiras de hardware, como Trezor</li>
+                                    <li>Trocas cripto integradas diretamente na carteira</li>
+                                    <li>Sem custódia, com controle completo sobre as chaves privadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://www.exodus.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Wasabi-logo.png" alt="Wasabi Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Wasabi Wallet</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Wasabi Wallet é uma carteira focada na privacidade, utilizando técnicas avançadas
+                                    como CoinJoin para aumentar o anonimato nas transações. Ideal para quem busca maior
+                                    proteção de dados.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Privacidade avançada com CoinJoin</li>
+                                    <li>Suporte para hardware wallets</li>
+                                    <li>Foco em anonimato e privacidade</li>
+                                    <li>Leve, sem a necessidade de baixar o blockchain completo</li>
+                                    <li>Código open-source e auditada</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://wasabiwallet.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://docs.wasabiwallet.io/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/atomic-logo.png" alt="Atomic Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Atomic Wallet</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Atomic Wallet é uma carteira multi-cripto que oferece suporte a mais de 300 moedas e
+                                    tokens. Além de armazenar criptomoedas, ela permite trocas internas e compras
+                                    diretas com cartão de crédito.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporta mais de 300 criptomoedas</li>
+                                    <li>Troca de criptos integrada via Atomic Swaps</li>
+                                    <li>Carteira descentralizada, com controle das chaves privadas</li>
+                                    <li>Compra de cripto com cartão de crédito integrada</li>
+                                    <li>Interface amigável e fácil de usar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://atomicwallet.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="os-wallets" id="hardware-wallets">
+
+            <div class="divider">
+                <hr>
+                <p>Carteiras disponíveis</p>
+                <hr>
+            </div>
+
+            <div class="wallets-container">
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/ledger-logo.jpg" alt="Ledger Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Ledger</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Ledger é uma empresa líder no mercado de hardwallets, conhecida por seus
+                                    dispositivos de alta segurança, como o Ledger Nano X. A empresa oferece suporte para
+                                    mais de 1.800 criptomoedas e se destaca pela facilidade de uso, permitindo conexões
+                                    via Bluetooth com dispositivos móveis. Os dispositivos da Ledger utilizam um chip
+                                    seguro (CC EAL5+) para proteger as chaves privadas, garantindo que os usuários
+                                    possam gerenciar seus ativos digitais de forma segura e conveniente.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Carteiras ofertadas</h4>
+                                <ul>
+                                    <li>Ledger Nano X</li>
+                                    <li>Ledger Nano S Plus</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://www.ledger.com/pt-br" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="paid">
+                                <p>Paga</p>
+                                <img src="/assets/img/paid-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/trezor-logo.svg" alt="Trezor Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Trezor</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Trezor é uma das pioneiras em hardwallets e é amplamente reconhecida por sua
+                                    segurança e usabilidade. O Trezor Model T, por exemplo, possui uma tela sensível ao
+                                    toque e suporta mais de 1.000 criptomoedas. A empresa oferece uma interface
+                                    intuitiva através do Trezor Suite, facilitando o gerenciamento de criptoativos. A
+                                    segurança é uma prioridade, com código open-source e funcionalidades como Shamir
+                                    Backup para backups seguros.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Carteiras ofertadas</h4>
+                                <ul>
+                                    <li>Trezor Model T</li>
+                                    <li>Trezor One</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://trezor.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="paid">
+                                <p>Paga</p>
+                                <img src="/assets/img/paid-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/KeepKey-logo.webp" alt="KeepKey Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>KeepKey</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    KeepKey é uma hardwallet que combina segurança com um design elegante e uma grande
+                                    tela. Suporta diversas criptomoedas e é integrada à plataforma ShapeShift para
+                                    facilitar a troca entre ativos digitais. O dispositivo armazena chaves privadas de
+                                    forma segura e oferece uma interface amigável para os usuários, tornando-o uma opção
+                                    atraente para quem busca segurança sem complicações.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Carteiras ofertadas</h4>
+                                <ul>
+                                    <li>KeepKey</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://www.keepkey.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="paid">
+                                <p>Paga</p>
+                                <img src="/assets/img/paid-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="os-wallets" id="android-wallets">
+
+            <div class="divider">
+                <hr>
+                <p>Carteiras disponíveis</p>
+                <hr>
+            </div>
+
+            <div class="wallets-container">
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Electrum-logo.svg" alt="Electrum Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Electrum</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Electrum é uma carteira leve e altamente segura, conhecida por sua velocidade e
+                                    simplicidade. Ela é ideal para usuários que preferem não baixar o blockchain
+                                    completo, mantendo suas transações rápidas e eficientes.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Leve e rápida, não requer download completo da blockchain.</li>
+                                    <li>Suporte a multisig (transações assinadas por várias partes).</li>
+                                    <li>Integração com carteiras de hardware.</li>
+                                    <li>Open-source, permitindo auditoria pública do código.</li>
+                                    <li>Suporte a Lightning Network para transações rápidas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://electrum.org" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://electrum.readthedocs.io/en/latest/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/metamask-logo.png" alt="MetaMask Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>MetaMask</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    MetaMask é uma carteira popular principalmente para ativos Ethereum e tokens ERC-20,
+                                    mas também pode ser usada para Bitcoin através de redes compatíveis. É amplamente
+                                    utilizada para interagir com DApps.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporte para Ethereum e tokens ERC-20</li>
+                                    <li>Facilidade de uso para interações com DApps</li>
+                                    <li>Controle total sobre chaves privadas</li>
+                                    <li>Funcionalidade de troca integrada</li>
+                                    <li>Código open-source</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://metamask.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://docs.metamask.io/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/mycelium-logo.jpg" alt="Mycelium Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Mycelium</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Mycelium é uma carteira Bitcoin focada em privacidade e segurança, conhecida por
+                                    suas funcionalidades avançadas. Suporta carteiras de hardware e permite transações
+                                    anônimas.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporte para carteiras de hardware, como Trezor e Ledger</li>
+                                    <li>Funcionalidade de troca de Bitcoin por outros ativos</li>
+                                    <li>Transações anônimas através de Tor</li>
+                                    <li>Interface fácil de usar com opções avançadas</li>
+                                    <li>Integrado com serviços de compra e venda de Bitcoin</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://mycelium.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/muun-logo.png" alt="Muun Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Muun Wallet</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Muun Wallet é uma carteira que combina simplicidade e segurança, focando em
+                                    transações de Bitcoin. Ela utiliza a tecnologia Lightning Network para oferecer
+                                    transações rápidas e baratas.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Transações rápidas com suporte para Lightning Network</li>
+                                    <li>Interface amigável e fácil de usar</li>
+                                    <li>Suporte para recuperação fácil de conta</li>
+                                    <li>Controle total sobre chaves privadas</li>
+                                    <li>Segurança robusta com múltiplas camadas de proteção</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://muun.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="os-wallets" id="ios-wallets">
+
+            <div class="divider">
+                <hr>
+                <p>Carteiras disponíveis</p>
+                <hr>
+            </div>
+
+            <div class="wallets-container">
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/Electrum-logo.svg" alt="Electrum Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Electrum</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Electrum é uma carteira leve e altamente segura, conhecida por sua velocidade e
+                                    simplicidade. Ela é ideal para usuários que preferem não baixar o blockchain
+                                    completo, mantendo suas transações rápidas e eficientes.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Leve e rápida, não requer download completo da blockchain.</li>
+                                    <li>Suporte a multisig (transações assinadas por várias partes).</li>
+                                    <li>Integração com carteiras de hardware.</li>
+                                    <li>Open-source, permitindo auditoria pública do código.</li>
+                                    <li>Suporte a Lightning Network para transações rápidas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://electrum.org" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://electrum.readthedocs.io/en/latest/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/metamask-logo.png" alt="MetaMask Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>MetaMask</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    MetaMask é uma carteira popular principalmente para ativos Ethereum e tokens ERC-20,
+                                    mas também pode ser usada para Bitcoin através de redes compatíveis. É amplamente
+                                    utilizada para interagir com DApps.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporte para Ethereum e tokens ERC-20</li>
+                                    <li>Facilidade de uso para interações com DApps</li>
+                                    <li>Controle total sobre chaves privadas</li>
+                                    <li>Funcionalidade de troca integrada</li>
+                                    <li>Código open-source</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://metamask.io/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <a href="https://docs.metamask.io/" target="_blank">
+                                <button class="documentation-button">
+                                    <p>Documentação</p>
+                                    <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/mycelium-logo.jpg" alt="Mycelium Wallet Logo"
+                        height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Mycelium</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Mycelium é uma carteira Bitcoin focada em privacidade e segurança, conhecida por
+                                    suas funcionalidades avançadas. Suporta carteiras de hardware e permite transações
+                                    anônimas.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Suporte para carteiras de hardware, como Trezor e Ledger</li>
+                                    <li>Funcionalidade de troca de Bitcoin por outros ativos</li>
+                                    <li>Transações anônimas através de Tor</li>
+                                    <li>Interface fácil de usar com opções avançadas</li>
+                                    <li>Integrado com serviços de compra e venda de Bitcoin</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://mycelium.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wallet-card">
+                    <img class="wallet-logo" src="/assets/img/muun-logo.png" alt="Muun Wallet Logo" height="250px">
+                    <div class="geral-infos">
+                        <div class="infos">
+                            <h3>Muun Wallet</h3>
+                            <div class="info-container">
+                                <h4>Descrição</h4>
+                                <p>
+                                    Muun Wallet é uma carteira que combina simplicidade e segurança, focando em
+                                    transações de Bitcoin. Ela utiliza a tecnologia Lightning Network para oferecer
+                                    transações rápidas e baratas.
+                                </p>
+                            </div>
+                            <div class="info-container">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Transações rápidas com suporte para Lightning Network</li>
+                                    <li>Interface amigável e fácil de usar</li>
+                                    <li>Suporte para recuperação fácil de conta</li>
+                                    <li>Controle total sobre chaves privadas</li>
+                                    <li>Segurança robusta com múltiplas camadas de proteção</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="adc-infos">
+                            <a href="https://muun.com/" target="_blank">
+                                <button class="wallet-site-button" id="site-button">
+                                    <p>Visite o Site</p>
+                                    <img class="icon" src="/assets/img/external-link-icon.svg" height="25px">
+                                </button>
+                            </a>
+
+                            <div class="free">
+                                <p>Gratuita</p>
+                                <img src="/assets/img/free-icon.svg" height="25px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -327,9 +1337,8 @@
             <div class="social-medias">
                 <h4>Comunidade</h4>
                 <ul>
-                    <li><a href="#github"><img src="" alt="">Github</a></li>
+                    <li><a href="#github">Github</a></li>
                     <li><a href="#reddit">Reddit</a></li>
-                    <li><a href="#discord">Discord</a></li>
                 </ul>
             </div>
 
@@ -345,6 +1354,7 @@
             </div>
         </div>
     </footer>
+
     <script src="/Javascript/transformButton.js"></script>
 </body>
 
