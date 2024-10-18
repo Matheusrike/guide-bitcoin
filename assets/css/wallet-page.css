@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+.header {
+    position:relative;
+}
+
 /*Banner Style*/
 .banner {
     width: 100%;
@@ -87,10 +91,10 @@ a {
 
 .none-wallet {
     width: 100vw;
-    display: none;
+    height: fit-content;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
     gap: 25px;
 }
 
@@ -147,6 +151,7 @@ a {
 .wallets-container {
     max-width: 100%;
     padding: 0px 150px;
+    padding-bottom: 50px;
 }
 
 .wallet-card {
@@ -163,6 +168,8 @@ a {
 }
 
 .wallet-logo {
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 100%;
 }
 
@@ -211,7 +218,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 .documentation-button, .wallet-site-button {
@@ -286,6 +293,10 @@ a {
     color: var(--Green);
 }
 
+.free img {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(57%) saturate(7327%) hue-rotate(74deg) brightness(87%) contrast(108%);
+}
+
 .paid {
     background-color: #ffebc4;
     border: 1px solid var(--Orange);
@@ -301,38 +312,10 @@ a {
 }
 
 .paid img {
-    fill: var(--Orange);
+    filter: brightness(0) saturate(100%) invert(51%) sepia(36%) saturate(3490%) hue-rotate(1deg) brightness(105%) contrast(103%);
 }
 
 .free p, .paid p {
     font-size: 1.6rem;
     font-weight: bold;
-}
-
-#none-wallet {
-    display: flex;
-}
-
-#windows-wallets {
-    display: none;
-}
-
-#mac-wallets {
-    display: none;
-}
-
-#linux-wallets {
-    display: none;
-}
-
-#hardware-wallets {
-    display: none;
-}
-
-#android-wallets {
-    display: none;
-}
-
-#ios-wallets {
-    display: none;
 }
