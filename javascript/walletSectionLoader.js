@@ -1,16 +1,13 @@
 import { windowsWallets, macWallets, linuxWallets, hardwareWallets, androidWallets, iosWallets } from './walletsData.js';
 
 function displayWallets(wallets, container) {
-    container.innerHTML = ''; // Limpar o conteúdo existente
+    container.innerHTML = '';
 
     if (wallets.length === 0) {
-        // Mostrar a seção "none-wallet" se não houver carteiras
         document.getElementById('none-section').style.display = 'block';
     } else {
-        // Esconder a seção "none-wallet" se houver carteiras
         document.getElementById('none-section').style.display = 'none';
 
-        // Adicionar o divider com um ID
         const divider = document.createElement('div');
         divider.className = 'divider';
         divider.id = 'wallet-divider';
@@ -72,7 +69,7 @@ function displayWallets(wallets, container) {
         const dividerElement = document.getElementById('wallet-divider');
         if (dividerElement) {
             window.scrollTo({
-                top: dividerElement.offsetTop - window.innerHeight / 4, // Deslocamento para rolar mais abaixo
+                top: dividerElement.offsetTop - window.innerHeight / 4,
                 behavior: 'smooth'
             });
         }
@@ -81,7 +78,7 @@ function displayWallets(wallets, container) {
 
 document.querySelectorAll('.banner .link-button').forEach(link => {
     link.addEventListener('click', (event) => {
-        event.preventDefault(); // Previne o comportamento padrão do link
+        event.preventDefault();
 
         const platform = event.currentTarget.getAttribute('data-platform');
         let wallets;

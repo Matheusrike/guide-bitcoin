@@ -1,0 +1,61 @@
+@import url(global.css);
+
+.banner {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 150px 0px;
+}
+
+.banner h1 {
+    width: 75%;
+    text-align: center;
+    font-size: 10rem;
+    margin: 0px 0px 5px 0px;
+    color: var(--Black);
+}
+
+.banner p {
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin: 0px 0px 50px 0px;
+}
+
+.story {
+    max-width: 100%;
+    margin: 25px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.story h1 {
+    font-size: 3rem;
+    color: var(--Orange);
+    margin-bottom: 10px;
+}
+
+.story p {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: var(--Black);
+    margin-bottom: 30px;
+}
+
+.story .list {
+    margin-bottom: 30px;
+}
+
+.story .item {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: var(--Black);
+    margin-left: 20px;
+}

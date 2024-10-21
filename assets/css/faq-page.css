@@ -1,0 +1,87 @@
+@import url(global.css);
+
+.banner {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.banner h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 10rem;
+    margin: 0px 0px 5px 0px;
+    color: var(--Black);
+}
+
+.banner p {
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin: 0px 0px 50px 0px;
+}
+
+/* Estilos para o container principal da FAQ */
+.faq-container {
+    background-color: var(--DarkGray);
+    padding: 30px;
+    margin: 0 200px 20px 200px;
+    border-radius: 15px;
+}
+
+/* Título principal */
+.faq-title {
+    font-size: 3.5em;
+    margin-bottom:30px;
+    color: var(--Orange);
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* Perguntas */
+.faq-question {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--White);
+    cursor: pointer;
+    line-height: 6rem;
+    transition: 150ms;
+}
+
+.faq-question:hover {
+    color: var(--Orange);
+    text-decoration: underline;
+}
+
+/* Respostas */
+.faq-answer {
+    font-size: 1.8rem;
+    line-height: 4rem;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    color: var(--White);
+    border-left: 4px solid var(--Orange);
+    text-align: justify;
+}
+
+/* Texto menor e informativo */
+.faq-note {
+    font-size: 1.4rem;
+    color: var(--DarkGray);
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Efeitos de transição */
+.faq-answer {
+    display: none;
+    transition: 300ms;
+}
+
+/* Para exibir a resposta ao clicar */
+.faq-question.active+.faq-answer {
+    display: block;   
+}
