@@ -1,201 +1,164 @@
-@import url(global.css);
+@import url(./global.css);
 
-
-/*Main*/
-.banner1 {
-    background-color: black;
-    width: auto;
-    height: 700px;
-    justify-content: center;
-
-}
-
-.banner1 h1 {
-    font-size: 8rem;
-    color: white;
+.banner {
+    width: 100%;
+    height: 500px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top: 120px;
+    gap: 50px;
 }
 
-.banner1 p {
-    font-size: 2rem;
-    color: white;
+.frases {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-left: 10px;
+    text-align: center;
 }
 
-.banner1 div {
+.frases h1 {
+    font-size: 10rem;
+    font-weight: semibold;
+    margin-bottom: 5px;
+}
+
+.segfrase {
+    width: 75%;
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+    font-weight: regular;
+}
+
+.button-container {
+    width: 100%;
     display: flex;
+    text-align: center;
     justify-content: center;
-    padding-top: 100px;
+    align-items: center;
+    gap: 25px;
 }
 
-.banner1 button {
-    background-color: orange;
-    border-radius: 8px;
-    width: 300px;
-    height: 70px;
-    cursor: pointer;
-}
+/*Exchange cards*/
 
-.banner1 button a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-
-}
-
-/*Para Indivíduos*/
-
-.banner2 {
-
-    width: auto;
-    height: 700px;
-    justify-content: center;
-}
-
-.banner2 h3 {
+.card {
+    max-width: 100%;
+    height: 500px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    color: orange;
-    font-size: 15px;
-
+    padding: 50px 150px;
+    gap: 200px;
 }
 
-.banner3 {
-    background-color: black;
-    width: auto;
-    height: 700px;
-    justify-content: center;
-}
-
-.banner3 nav ul li p {
-    font-size: 3rem;
-    justify-content: left;
-    padding: 8px;
-    color: white;
-}
-
-.banner3 button {
-    background-color: orange;
-    border-radius: 8px;
-    width: 300px;
-    height: 70px;
-    cursor: pointer;
-}
-
-.banner3 button a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.3em;
-}
-
-.banner4 {
-
-    width: auto;
-    height: 700px;
-    justify-content: center;
-}
-
-.banner4 h3 {
+.instruction {
+    width: 50%;
     display: flex;
-    justify-content: center;
-    color: orange;
-    font-size: 15px;
-
+    flex-direction: column;
 }
 
-.banner4 button {
-    background-color: orange;
-    border-radius: 8px;
-    width: 350px;
-    height: 70px;
-    cursor: pointer;
+.instruction p {
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.banner4 button a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.3rem;
-}
-
-
-.banner5 {
-    background-color: black;
-    width: auto;
-    height: 700px;
-    justify-content: center;
-}
-
-.banner5 nav ul li p {
-    font-size: 3rem;
-    justify-content: left;
-    padding: 8px;
-    color: white;
-}
-
-/*Para Empresas*/
-.banner6 {
-
-    width: auto;
-    height: 700px;
-    justify-content: center;
-}
-
-.banner6 h3 {
-    display: flex;
-    justify-content: center;
-    color: orange;
-    font-size: 15px;
-
-}
-
-.banner7 {
-    background-color: black;
-    width: auto;
-    height: 700px;
-    justify-content: center;
-}
-
-.banner7 nav ul li p {
-    font-size: 3rem;
-    justify-content: left;
-    padding: 8px;
-    color: white;
-}
-
-
-
-
-/*Zig-Zag*/
-
-nav ul,
-nav {
-    display: flex;
-    padding-top: 50px;
-}
-
-nav ul li {
-    list-style: none;
-    margin-right: 15px;
-}
-
-nav ul li h2 {
+.instruction h2 {
+    color: var(--Orange);
     font-size: 4rem;
-    justify-content: left;
-    color: orange;
+    margin-bottom: 25px;
 }
 
-nav ul li p {
-    font-size: 3rem;
-    justify-content: left;
-    padding: 8px;
-}
-
-nav ul li img {
-    height: 100px;
+.animation {
     width: 500px;
-    padding-top: 150px;
+    z-index: 1;
+}
+
+.card button {
+    width: 100%;
+    margin-top: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/*Black Card section*/
+
+.black-card {
+    background-color: var(--Black);
+}
+
+.black-card .instruction h3 {
+    color: var(--LightGray);
+}
+
+.black-card .instruction p {
+    color: var(--White);
+}
+
+.black-card img, .cta-button-filled:hover {
+    box-shadow: 0px 0px 10px rgba(234, 234, 234, 0.45);
+}
+
+/*White Card section*/
+
+.white-card .instruction h3 {
+    color: var(--DarkGray);
+}
+
+.white-card .instruction p {
+    color: var(--Black);
+}
+
+/*Animação de entrada*/
+
+/*Estado inicial*/
+.black-card .animation {
+    opacity: 0;
+    transform: translate(-100px);
+    transition: 1s;
+}
+
+.black-card .instruction {
+    opacity: 0;
+    transform: translate(-100px);
+    transition: 1s;
+}
+
+/*Estado final*/
+.black-card.show .animation {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.black-card.show .instruction {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/*Animação de entrada*/
+
+/*Estado inicial*/
+.white-card .animation {
+    opacity: 0;
+    transform: translate(100px);
+    transition: 1s;
+}
+
+.white-card .instruction {
+    opacity: 0;
+    transform: translate(100px);
+    transition: 1s;
+}
+
+/*Estado final*/
+.white-card.show .animation {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.white-card.show .instruction {
+    opacity: 1;
+    transform: translate(0);
 }

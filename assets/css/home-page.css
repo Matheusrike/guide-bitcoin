@@ -58,6 +58,17 @@ video {
     height: 562.5px;
 }
 
+.credits {
+    color: var(--Black);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.credits a {
+    color: var(--Orange);
+    text-decoration: underline;
+}
+
 .financ {
     width: 235px;
     height: 45px;

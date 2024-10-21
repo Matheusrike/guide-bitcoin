@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bitcoin - Como Usar</title>
+    <title>Bitcoin - Carteiras</title>
     <link rel="shortcut icon" href="/assets/img/Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/guide-page.css">
@@ -12,247 +12,199 @@
 
 <body>
     <header class="header">
-        <a href="/home"><img class="header-logo" src="../assets/img/Logo.svg" alt="Bitcoin Logo"></a>
+        <a href="/index.html"><img class="header-logo" src="/assets/img/Bitcoin-logo.svg" alt="Bitcoin Logo"></a>
         <nav>
             <ul class="nav-links">
-                <li><a href="/starting">Guia Prático</a></li>
-                <li><a href="/wallet">Escolha Sua Carteira</a></li>
-                <li><a href="/trading">Negocie</a></li>
-                <li><a href="/content">Aprenda Mais</a></li>
-                <li><a href="/about">Sobre o Bitcoin</a></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/guide.html">Como Usar</a></li>
+                <li><a href="/pages/wallet.html">Carteiras</a></li>
+                <li><a href="/pages/trading.html">Negocie Bitcoin</a></li>
+                <li><a href="/pages/content.html">Biblioteca</a></li>
+                <li><a href="/pages/about.html">Conheça a História</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="banner1">
-            <h1>Como usar o Bitcoin</h1>
-            <p>Usar o bitcoin é simples e acessível a qualquer pessoa. Descubra como participar dessa comunidade que
-                cresce cada vez mais.</p>
-            <div>
-                <button><a href="#">Como usar o Bitcoin</a></button>]
-                <button><a href="#">Como Receber em Bitcoin</a></button>
+        <section class="banner">
+            <div class="frases">
+                <h1>Explore o <span class="realce">Poder</span> do <span class="realce">Bitcoin</span></h1>
+                <p class="segfrase">Usar o bitcoin é simples e acessível a qualquer pessoa. Descubra como participar
+                    dessa comunidade que cresce cada vez mais.
+                </p>
             </div>
-        </div>
-        <!-- Individuos -->
-        <div class="banner2">
-            <h3>--- Para Indivíduos ---</h3>
 
-            <nav>
-                <ul>
-                    <li>
-                        <div>
-                            <h2>Entenda como o Bitcoin funciona</h2>
-                            <p>O Bitcoin é uma moeda digital que funciona sem intermediários, permitindo que pessoas
-                                enviem e recebam dinheiro diretamente, de qualquer lugar do mundo. Para usar, é preciso
-                                uma carteira digital, onde os bitcoins são armazenados. As transações são registradas em
-                                uma rede pública chamada blockchain, e verificadas por mineradores, que garantem a
-                                segurança. Com o Bitcoin, é possível fazer pagamentos rápidos, sem precisar de bancos, e
-                                ele é usado tanto para compras quanto como investimento, sendo aceito em diversos
-                                modelos de negócio ao redor do mundo.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/369ca361-5c54-415d-956d-b9dd948f4986/YkwlSHX8C2.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <div class="button-container">
+                <button class="cta-button" onclick="showSection('individuals')">
+                    <p class="text">Para indivíduos</p>
+                  </button>
+                  <button class="cta-button" onclick="showSection('companies')">
+                    <p class="text">Para empresas</p>
+                  </button>
+            </div>
+        </section>
 
-        </div>
-        <div class="banner3">
+        <section class="individuals">
+            <div class="card black-card">
+                <div class="instruction">
+                    <h2>Entenda como o Bitcoin funciona</h2>
+                    <p>O Bitcoin é uma moeda digital que você pode usar para enviar e receber dinheiro diretamente, sem
+                        intermediários. Tudo o que você precisa é de uma carteira digital para armazenar seus bitcoins.
+                        As
+                        transações são registradas na blockchain, uma rede pública que garante a segurança e a
+                        transparência
+                        das operações.</p>
 
-            <nav>
-                <ul>
+                    <p>Ao usar Bitcoin, você pode fazer pagamentos de forma rápida e sem depender de bancos. Além disso,
+                        ele
+                        é amplamente aceito tanto para compras quanto como forma de investimento. Se quiser começar,
+                        basta
+                        obter uma carteira e começar a usar!</p>
+                </div>
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/369ca361-5c54-415d-956d-b9dd948f4986/YkwlSHX8C2.json"
+                        background="transparent" speed="0.5" style="width: 500px; height: 500px;" loop
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
 
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/0b58e2b9-84a8-41eb-b6cd-a65bd1bcb064/7WTlJdLzWf.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>Saiba escolher sua carteira</h2>
-                            <p>As carteiras de Bitcoin são essenciais para armazenar e gerenciar seus bitcoins de forma
-                                segura. Elas funcionam como uma espécie de conta digital, onde você pode enviar, receber
-                                e guardar suas criptomoedas. Existem diferentes tipos de carteiras, como carteiras
-                                online (mais fáceis de acessar) e carteiras físicas ou offline (mais seguras contra
-                                ataques virtuais). É importante escolher a carteira que melhor se adapta às suas
-                                necessidades de segurança e praticidade.</p>
-                            <button><a href="#">Descubra as melhores carteiras</a></button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <div class="card white-card">
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/0b58e2b9-84a8-41eb-b6cd-a65bd1bcb064/7WTlJdLzWf.json"
+                        background="transparent" speed="0.7" style="width: 500px; height: 500px;" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <div class="instruction">
+                    <h2>Saiba escolher sua carteira</h2>
+                    <p>Para começar a usar Bitcoin, você precisa de uma carteira digital, e a escolha da carteira certa
+                        é
+                        fundamental para garantir segurança e praticidade no seu dia a dia. Existem carteiras online,
+                        que
+                        são fáceis de acessar, e carteiras físicas ou offline, que são mais seguras contra ataques
+                        virtuais.
+                    </p>
 
-        </div>
-        <div class="banner4">
-            <nav>
-                <ul>
-                    <li>
-                        <div>
-                            <h2>Como adquirir seus Bitcoins</h2>
-                            <p>Você pode adquirir bitcoins de duas formas principais: diretamente de outras pessoas,
-                                através de transações peer-to-peer, ou por meio de exchanges de criptomoedas. Na compra
-                                peer-to-peer, você negocia diretamente com o vendedor e recebe os bitcoins em sua
-                                carteira digital. Já nas exchanges, que funcionam como corretoras, é possível criar uma
-                                conta, depositar dinheiro em moeda tradicional e comprar bitcoins de maneira segura e
-                                rápida. Além disso, nas exchanges, você também pode vender seus bitcoins, caso queira
-                                convertê-los de volta para dinheiro.</p>
-                            <button><a href="#">Compre Bitcoin Pelos Melhores Preços</a></button>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/3960db4b-714c-4966-97ea-6dff0ae74992/tY393r7DP2.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="banner5">
+                    <p>Recomendamos que você escolha a carteira que melhor atende às suas necessidades. Se precisa de
+                        praticidade, uma carteira online pode ser uma boa opção. Se prioriza segurança, considere uma
+                        carteira offline.</p>
 
-            <nav>
-                <ul>
+                    <a href="/pages/wallet.html">
+                        <button class="cta-button-filled">Encontre carteiras para seus Bitcoins</button>
+                    </a>
+                </div>
+            </div>
 
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/c62d2cd6-8958-4e40-bbd1-4cc16f81a5c3/nyfrNhARtk.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>Como usar o Bitcoin em seu dia a dia</h2>
-                            <p>Cada vez mais serviços e comércios ao redor do mundo estão aceitando Bitcoin como forma
-                                de pagamento. Você pode usar seus bitcoins para pagar por produtos e serviços de forma
-                                rápida e segura. Ao fazer isso, compartilhe sua experiência e ajude a dar mais
-                                visibilidade a esses estabelecimentos que adotam o Bitcoin, incentivando a expansão do
-                                seu uso no dia a dia.</p>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+            <div class="card black-card">
+                <div class="instruction">
+                    <h2>Como adquirir seus Bitcoins</h2>
+                    <p>Existem duas formas principais para você adquirir Bitcoins. A primeira é através de transações
+                        peer-to-peer, negociando diretamente com outra pessoa. A segunda é utilizando uma exchange, uma
+                        corretora de criptomoedas. Nas exchanges, você pode criar uma conta, depositar moeda tradicional
+                        e comprar Bitcoins de forma rápida e segura.</p>
 
-        </div>
-        <!-- Empresas -->
-        <div class="banner6">
-            <h3>--- Para Empresas ---</h3>
+                    <p>Independentemente da forma que escolher, você poderá armazenar seus Bitcoins na sua carteira
+                        digital e usá-los para pagamentos ou investimentos.</p>
 
-            <nav>
-                <ul>
-                    <li>
-                        <div>
-                            <h2>Entenda como o Bitcoin funcionará para sua empresa</h2>
-                            <p>O Bitcoin não exige que as empresas mudem radicalmente seus processos financeiros. No
-                                entanto, sua utilização é diferente das formas de pagamento tradicionais que a maioria
-                                das empresas já conhece. Antes de implementar o Bitcoin como método de pagamento, é
-                                fundamental que os empresários compreendam algumas práticas essenciais para usá-lo de
-                                forma segura e evitar armadilhas comuns.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/32267a80-8992-4a93-b516-6eda8243021d/ZyBcABCv9u.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                    <a href="/pages/trading.html">
+                        <button class="cta-button-filled">Veja onde adquirir seus primeiros Bitcoin</button>
+                    </a>
+                </div>
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/3960db4b-714c-4966-97ea-6dff0ae74992/tY393r7DP2.json"
+                        background="transparent" speed="0.7" style="width: 500px; height: 500px;" loop
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
 
-        </div>
-        <div class="banner7">
+            <div class="card white-card">
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/c62d2cd6-8958-4e40-bbd1-4cc16f81a5c3/nyfrNhARtk.json"
+                        background="transparent" speed="0.7" style="width: 500px; height: 500px;" loop
+                        autoplay></dotlottie-player>
+                </div>
+                <div class="instruction">
+                    <h2>Como usar o Bitcoin no seu dia a dia</h2>
+                    <p>Você pode usar Bitcoin para pagar por produtos e serviços em diversos lugares ao redor do mundo.
+                        À medida que mais estabelecimentos aceitam Bitcoin, você terá cada vez mais opções para usar
+                        suas criptomoedas no cotidiano.
+                    </p>
 
-            <nav>
-                <ul>
+                    <p>Sempre que fizer uma compra usando Bitcoin, compartilhe sua experiência com outras pessoas! Isso
+                        ajuda a dar visibilidade aos comércios que aceitam essa forma de pagamento, incentivando outros
+                        a adotá-la.</p>
+                </div>
+            </div>
+        </section>
 
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/435218f6-6888-4aee-b2c4-5bc9576efcca/ilUkgUnGt1.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>Processando pagamentos em Bitcoin</h2>
-                            <p>As empresas podem optar por processar pagamentos e faturas de forma independente ou
-                                utilizar serviços de comércio que aceitam tanto dinheiro local quanto bitcoins.
-                                Atualmente, muitos pontos de venda em empresas utilizam tablets ou smartphones para
-                                facilitar que os clientes realizem pagamentos diretamente de seus dispositivos móveis.
-                                Essa flexibilidade não apenas torna o processo de pagamento mais ágil, mas também atende
-                                à crescente demanda por soluções digitais e convenientes.</p>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+        <section class="companies">
+            <div class="card black-card">
+                <div class="instruction">
+                    <h2>Entenda como o Bitcoin funcionará para sua empresa</h2>
+                    <p>Se você é um empresário, saiba que não precisa mudar drasticamente os processos financeiros do
+                        seu negócio para começar a aceitar Bitcoin. Porém, é importante entender as diferenças entre
+                        essa moeda digital e os métodos de pagamento tradicionais.</p>
 
-        </div>
-        <div class="banner6">
-            <nav>
-                <ul>
-                    <li>
-                        <div>
-                            <h2>Como tratar da contabilidade dos pagamentos em Bitcoin</h2>
-                            <p>Os comerciantes normalmente apresentam e exibem os preços em sua moeda local, enquanto o
-                                Bitcoin opera de maneira semelhante a uma moeda estrangeira. Para garantir conformidade
-                                com as regulamentações fiscais, é recomendável que as empresas consultem um contador
-                                qualificado. Esse profissional pode fornecer orientações específicas sobre como
-                                gerenciar transações em Bitcoin e atender às obrigações fiscais relacionadas a essa
-                                forma de pagamento.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <dotlottie-player
-                                src="https://lottie.host/c766e4ce-c65e-490c-9071-a2563516e1ad/iZ9m1NBHWC.json"
-                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
-                                autoplay></dotlottie-player>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="banner7">
+                    <p>Antes de começar, recomendamos que você se familiarize com as boas práticas para usar Bitcoin de
+                        forma segura e eficiente em sua empresa. Isso te ajudará a evitar problemas e aproveitar ao
+                        máximo essa nova forma de pagamento.</p>
+                </div>
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/32267a80-8992-4a93-b516-6eda8243021d/ZyBcABCv9u.json"
+                        background="transparent" speed="1" style="width: 500px; height: 500px;" loop
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
 
-            <nav>
-                <ul>
+            <div class="card white-card">
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/c58de9ca-e708-4b01-b4c8-b088e7d8b4ba/6tZuhK14wD.json"
+                        background="transparent" speed="1" style="width: 500px; height: 500px;"
+                        autoplay></dotlottie-player>
+                </div>
+                <div class="instruction">
+                    <h2>Processando pagamentos em Bitcoin</h2>
+                    <p>Para começar a usar Bitcoin, você precisa de uma carteira digital, e a escolha da carteira certa
+                        é
+                        fundamental para garantir segurança e praticidade no seu dia a dia. Existem carteiras online,
+                        que
+                        são fáceis de acessar, e carteiras físicas ou offline, que são mais seguras contra ataques
+                        virtuais.
+                    </p>
 
-                    <li>
-                        <div>
-                            <img src="./assets/img/bitcoin-accepted-here-btc 1.svg">
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <h2>Aumente a visibilidade da sua empresa apenas aceitando Bitcoin</h2>
-                            <p>Com o aumento do número de usuários em busca de locais para gastar bitcoins, é uma
-                                excelente oportunidade para as empresas se destacarem. Divulgue seu negócio em sites
-                                especializados em criptomoedas para facilitar que esses consumidores encontrem você.
-                                Além disso, considere utilizar o logo do Bitcoin em seu site, sinalizando claramente que
-                                sua empresa aceita essa forma de pagamento e atraindo mais clientes interessados em usar
-                                suas criptomoedas.</p>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+                    <p>Recomendamos que você escolha a carteira que melhor atende às suas necessidades. Se precisa de
+                        praticidade, uma carteira online pode ser uma boa opção. Se prioriza segurança, considere uma
+                        carteira offline.</p>
+                </div>
+            </div>
 
-        </div>
+            <div class="card black-card">
+                <div class="instruction">
+                    <h2>Como tratar da contabilidade dos pagamentos em Bitcoin</h2>
+                    <p>Mesmo que sua empresa exiba os preços em moeda local, o Bitcoin opera como uma moeda estrangeira.
+                        Para garantir que tudo esteja em conformidade com as regras fiscais, é fundamental que você
+                        consulte um contador especializado. Ele vai te orientar sobre como registrar as transações em
+                        Bitcoin corretamente e garantir que você atenda às obrigações fiscais.</p>
+                </div>
+                <div class="animation">
+                    <dotlottie-player src="https://lottie.host/c289db2c-dc6f-4755-a717-745e3fcd4b49/eKXjawsRB0.json"
+                        background="transparent" speed="1" style="width: 500px; height: 500px;"
+                        autoplay></dotlottie-player>
+                </div>
+            </div>
+
+            <div class="card white-card">
+                <img src="/assets/img/bitcoin-accepted-here-btc 1.svg" height="200px">
+                <div class="instruction">
+                    <h2>Aumente a visibilidade da sua empresa aceitando Bitcoin</h2>
+                    <p>Com o número crescente de usuários de Bitcoin, esta é uma excelente oportunidade para você
+                        destacar o seu negócio! Divulgue que você aceita essa forma de pagamento em sites especializados
+                        em criptomoedas e inclua o logo do Bitcoin em seu site.</p>
+
+                    <p>Isso não só vai atrair novos clientes, mas também colocar seu negócio em destaque para um público
+                        que está sempre em busca de lugares para gastar suas criptomoedas.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -262,10 +214,11 @@
             <div class="content">
                 <h4>Outros Conteúdos Relevantes</h4>
                 <ul>
+                    <li><a href="/index.html">Inicio</a></li>
                     <li><a href="/pages/guide.html">Como Usar</a></li>
-                    <li><a href="/pages/wallet.html">Carteiras Indicadas</a></li>
+                    <li><a href="/pages/wallet.html">Carteiras</a></li>
                     <li><a href="/pages/trading.html">Negocie Bitcoin</a></li>
-                    <li><a href="/pages/content.html">Aprenda Mais</a></li>
+                    <li><a href="/pages/content.html">Biblioteca</a></li>
                     <li><a href="/pages/about.html">Conheça a História</a></li>
                 </ul>
             </div>
@@ -275,7 +228,8 @@
                 <ul>
                     <li><a href="https://github.com/bitcoin/bitcoin" target="_blank">Github</a></li>
                     <li><a href="https://www.reddit.com/r/Bitcoin/" target="_blank">Reddit</a></li>
-                    <li><a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_pt_br.pdf" target="_blank">White Paper</a></li>
+                    <li><a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_pt_br.pdf" target="_blank">White
+                            Paper</a></li>
                 </ul>
             </div>
 
@@ -291,6 +245,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script type="module" src="/javascript/cardEntrance.js"></script>
+    <script src="/javascript/guideLoader.js"></script>
 </body>
 
 </html>

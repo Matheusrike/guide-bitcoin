@@ -25,6 +25,17 @@ body {
     background-color: var(--White);
 }
 
+/*Padrões do código*/
+
+a {
+    text-decoration: none;
+}
+
+/*Realce de texto*/
+.realce {
+    color: var(--Orange);
+}
+
 /*Header styles*/
 
 .header {
@@ -37,7 +48,6 @@ body {
     margin: 25px 5vw;
     border-radius: 10px;
     background-color: var(--Black);
-    position: sticky;
     top: 25px;
     box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -164,18 +174,6 @@ body {
     width: 50%;
 }
 
-/*Padrões de código*/
-
-a {
-    text-decoration: none;
-}
-
-/*Realce de texto*/
-
-.realce {
-    color: var(--Orange);
-}
-
 /*Botão CTA*/
 .cta-button {
     display: flex;
@@ -206,6 +204,32 @@ a {
 
 .cta-button:hover .text {
     color: var(--White);
+}
+
+/*Botão CTA preenchido*/
+.cta-button-filled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px var(--Orange) solid;
+    cursor: pointer;
+    transition: 400ms;
+    background-color: var(--Orange);
+    color: var(--White);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-filled .text {
+    color: var(--White);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 300ms;
+}
+
+.cta-button-filled:hover{
+    box-shadow: 0px 4px 10px rgba(234, 234, 234, 0.2);
 }
 
 /*Botão Secundário*/
@@ -243,28 +267,16 @@ a {
     outline: 1px solid var(--Orange);
 }
 
-/*Botão CTA preenchido*/
-.cta-button-filled {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    border-radius: 5px;
-    border: 2px var(--Orange) solid;
-    cursor: pointer;
-    transition: 400ms;
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: var(--Gray);
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
     background-color: var(--Orange);
-    color: var(--White);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.cta-button-filled .text {
-    color: var(--White);
-    font-size: 1.8rem;
-    font-weight: bold;
-    transition: 300ms;
-}
-
-.cta-button-filled:hover{
-    box-shadow: 0px 4px 10px rgba(234, 234, 234, 0.2);
-}
+  }
