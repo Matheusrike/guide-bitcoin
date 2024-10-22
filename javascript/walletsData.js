@@ -22,7 +22,7 @@ export const windowsWallets = [
     },
     {
         logo: {
-            src: "/assets/img/Electrum-logo.svg",
+            src: "/assets/img/Electrum-Logo.svg",
             alt: "Electrum Wallet Logo",
             height: "250px"
         },
@@ -214,7 +214,7 @@ export const macWallets = [
     },
     {
         logo: {
-            src: "/assets/img/Electrum-logo.svg",
+            src: "/assets/img/Electrum-Logo.svg",
             alt: "Electrum Wallet Logo",
             height: "250px"
         },
@@ -322,7 +322,7 @@ export const linuxWallets = [
     },
     {
         logo: {
-            src: "/assets/img/Electrum-logo.svg",
+            src: "/assets/img/Electrum-Logo.svg",
             alt: "Electrum Wallet Logo",
             height: "250px"
         },
@@ -465,7 +465,7 @@ export const androidWallets = [
     },    
     {
         logo: {
-            src: "/assets/img/Electrum-logo.svg",
+            src: "/assets/img/Electrum-Logo.svg",
             alt: "Electrum Wallet Logo",
             height: "250px"
         },
@@ -594,7 +594,7 @@ export const iosWallets = [
     },
     {
         logo: {
-            src: "/assets/img/Electrum-logo.svg",
+            src: "/assets/img/Electrum-Logo.svg",
             alt: "Electrum Wallet Logo",
             height: "250px"
         },

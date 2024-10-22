@@ -53,7 +53,7 @@ function displayWallets(wallets, container) {
                         <a href="${wallet.additionalInfo.documentationLink}" target="_blank">
                             <button class="documentation-button">
                                 <p>Documentação</p>
-                                <img class="icon" src="/assets/img/Folder-info-icon.svg" height="25px">
+                                <img class="icon" src="/assets/img/folder-icon.svg" height="25px">
                             </button>
                         </a>` : ''}
                         <div class="${freeClass}">
