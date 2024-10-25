@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Bitcoin - Feedback</title>
+    <link rel="shortcut icon" href="/assets/img/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/feedback-page.css">
+    <script type="module" src="/javascript/processaForm.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html"><img class="header-logo" src="/assets/img/Bitcoin-logo.svg" alt="Bitcoin Logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/pages/guide.html">Como Usar</a></li>
+                <li><a href="/pages/wallet.html">Carteiras</a></li>
+                <li><a href="/pages/trading.html">Negocie Bitcoin</a></li>
+                <li><a href="/pages/content.html">Biblioteca</a></li>
+                <li><a href="/pages/about.html">Conheça a História</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <h1><span class="realce">Envie</span> seu <span class="realce">feedback</span></h1>
+        </div>
+        
+        <form class="form" id="feedback-form">
+            <label for="name">Nome<span class="realce">*</span></label>
+            <input class="input" type="text" id="name" name="name" placeholder="Seu nome">
+
+            <label for="email">E-mail<span class="realce">*</span></label>
+            <input class="input" type="email" id="email" name="email" placeholder="Seu E-mail">
+
+            <label for="message">Sugestão<span class="realce">*</span></label>
+            <textarea class="input" name="message" id="message" placeholder="Deixe sua sugestão..."></textarea>
+
+            <input class="submit" id="submit" type="submit" value="Enviar sugestão">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <img src="/assets/img/Bitcoin-logo.svg" alt="Logo Bitcoin" height="60px">
+        <hr>
+        <div class="footer-container">
+            <div class="content">
+                <h4>Outros Conteúdos Relevantes</h4>
+                <ul>
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/pages/guide.html">Como Usar</a></li>
+                    <li><a href="/pages/wallet.html">Carteiras</a></li>
+                    <li><a href="/pages/trading.html">Negocie Bitcoin</a></li>
+                    <li><a href="/pages/content.html">Biblioteca</a></li>
+                    <li><a href="/pages/about.html">Conheça a História</a></li>
+                    <li><a href="/pages/faq.html">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="social-medias">
+                <h4>Comunidade</h4>
+                <ul>
+                    <li><a href="https://github.com/bitcoin/bitcoin" target="_blank">Github</a></li>
+                    <li><a href="https://www.reddit.com/r/Bitcoin/" target="_blank">Reddit</a></li>
+                    <li><a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_pt_br.pdf" target="_blank">White
+                            Paper</a></li>
+                </ul>
+            </div>
+
+            <div class="disclaimer">
+                <h4>Isenção de Responsabilidade</h4>
+                <p>O conteúdo deste site é informativo e educacional e não constitui aconselhamento financeiro ou de
+                    investimento. O uso de criptomoedas envolve riscos, e qualquer decisão relacionada ao Bitcoin deve
+                    ser feita com cautela e após consulta a um profissional qualificado. Não nos responsabilizamos por
+                    eventuais perdas financeiras ou danos resultantes do uso das informações aqui apresentadas. O
+                    usuário é responsável por garantir conformidade com as leis de sua jurisdição.</p>
+                <p class="copyright">Desenvolvido por Matheus Alves, Julia Alves, Gustavo Torelli, Gianlucca Estéfani.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

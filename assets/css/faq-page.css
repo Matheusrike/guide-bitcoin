@@ -26,7 +26,7 @@
 
 /* Estilos para o container principal da FAQ */
 .faq-container {
-    background-color: var(--DarkGray);
+    background-color: var(--LightGray);
     padding: 30px;
     margin: 0 200px 20px 200px;
     border-radius: 15px;
@@ -45,7 +45,7 @@
 .faq-question {
     font-size: 2em;
     font-weight: bold;
-    color: var(--White);
+    color: var(--Black);
     cursor: pointer;
     line-height: 6rem;
     transition: 150ms;
@@ -73,6 +73,15 @@
     color: var(--DarkGray);
     margin: 20px 0;
     text-align: center;
+}
+
+.faq-note a {
+    color: var(--Orange);
+}
+
+.faq-note a:hover {
+    color: var(--Black);
+    text-decoration: underline;
 }
 
 /* Efeitos de transição */
