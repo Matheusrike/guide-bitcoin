@@ -62,7 +62,7 @@
     line-height: 4rem;
     padding-left: 15px;
     margin-bottom: 20px;
-    color: var(--White);
+    color: var(--Black);
     border-left: 4px solid var(--Orange);
     text-align: justify;
 }
