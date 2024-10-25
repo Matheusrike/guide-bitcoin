@@ -10,7 +10,7 @@ Este projeto foi criado para aplicar os conceitos de HTML e CSS aprendidos duran
 
 Você pode acessar o site pelo link abaixo:
 
-[Guide Bitcoin](https://guidebitcoin.vercel.app/)
+[GuideBitcoin.vercel.app](https://guidebitcoin.vercel.app/)
 
 Ou executar localmente seguindo as instruções abaixo:
 
